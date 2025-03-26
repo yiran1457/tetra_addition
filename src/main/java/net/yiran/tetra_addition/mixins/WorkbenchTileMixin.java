@@ -31,9 +31,13 @@ public class WorkbenchTileMixin {
                       ItemStack[] materials,
                       ItemStack[] materialsAltered
     ) {
-        MinecraftForge.EVENT_BUS.post(new WorkbenchTileCraftEvent(upgradedStack));
-        if(!player.level().isClientSide) {
-            player.sendSystemMessage(Component.literal(upgradedStack.toString()));
-        }
+        MinecraftForge.EVENT_BUS.post(new WorkbenchTileCraftEvent(
+                targetStack,
+                upgradedStack,
+                player,
+                (WorkbenchTile)(Object) this,
+                materials,
+                materialsAltered
+        ));
     }
 }
