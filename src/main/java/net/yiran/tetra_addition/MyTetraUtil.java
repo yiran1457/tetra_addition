@@ -11,12 +11,16 @@ import se.mickelus.tetra.module.schematic.UpgradeSchematic;
 
 import javax.annotation.Nullable;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class MyTetraUtil {
     public static MyTetraUtil instance = new MyTetraUtil();
     @Nullable
-    public Map<String, ConfigSchematic> moduleKey2Schematic;
+    private Map<String, ConfigSchematic> moduleKey2Schematic;
+    @Nullable
+    private Set<ConfigSchematic> schematicsSet;
 
     public MyTetraUtil() {
     }
@@ -48,19 +52,29 @@ public class MyTetraUtil {
 
     public Map<String, ConfigSchematic> getAndUpdateModuleKey2Schematic() {
         HashMap<String, ConfigSchematic> moduleKey2Schematic = new HashMap<>();
+        Set<ConfigSchematic> schematicsSet = new HashSet<>();
         getSchematicMap().forEach((k, v) -> {
-            if (v instanceof ConfigSchematic && !v.isHoning()) {
-                String moduleKey = ((IConfigSchematic) v).getDefinition().outcomes[0].moduleKey;
+            if (v instanceof ConfigSchematic configSchematic && !v.isHoning()) {
+                String moduleKey = ((IConfigSchematic) configSchematic).getDefinition().outcomes[0].moduleKey;
                 if (moduleKey != null) {
-                    moduleKey2Schematic.put(moduleKey, (ConfigSchematic) v);
+                    moduleKey2Schematic.put(moduleKey, configSchematic);
+                    schematicsSet.add(configSchematic);
                 }
             }
         });
+        this.schematicsSet = schematicsSet;
         this.moduleKey2Schematic = moduleKey2Schematic;
         return moduleKey2Schematic;
     }
 
     public boolean isSame(ItemStack itemStack, String slot, ConfigSchematic schematic) {
         return getModuleKey2Schematic().get(getModuleKey(itemStack, slot)) == schematic;
+    }
+
+    public boolean isReplace(ConfigSchematic schematic){
+        if (schematicsSet == null)
+            getAndUpdateModuleKey2Schematic();
+        return schematicsSet.contains(schematic);
+
     }
 }
