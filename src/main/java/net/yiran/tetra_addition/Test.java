@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.Mod;
 public class Test {
     @SubscribeEvent
     public static void craft(WorkbenchTileCraftEvent event) {
-        event.player.sendSystemMessage(Component.literal(event.targetStack.serializeNBT().toString()));
-        event.player.sendSystemMessage(Component.literal(event.upgradedStack.serializeNBT().toString()));
+        // event.player.sendSystemMessage(Component.literal(event.targetStack.serializeNBT().toString()));
+        // event.player.sendSystemMessage(Component.literal(event.upgradedStack.serializeNBT().toString()));
     }
 }

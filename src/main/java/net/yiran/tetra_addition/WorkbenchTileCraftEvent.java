@@ -5,6 +5,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.eventbus.api.Event;
 import se.mickelus.tetra.blocks.workbench.WorkbenchTile;
+import se.mickelus.tetra.module.schematic.UpgradeSchematic;
 
 public class WorkbenchTileCraftEvent extends Event {
     public ItemStack targetStack;
@@ -14,6 +15,8 @@ public class WorkbenchTileCraftEvent extends Event {
     public WorkbenchTile workbenchTile;
     public ItemStack[] materials;
     public ItemStack[] materialsAltered;
+    public UpgradeSchematic currentSchematic;
+    public String currentSlot;
 
     public WorkbenchTileCraftEvent(
             ItemStack targetStack,
@@ -21,7 +24,9 @@ public class WorkbenchTileCraftEvent extends Event {
             Player player,
             WorkbenchTile workbenchTile,
             ItemStack[] materials,
-            ItemStack[] materialsAltered
+            ItemStack[] materialsAltered,
+            UpgradeSchematic currentSchematic,
+            String currentSlot
     ) {
         this.targetStack = targetStack;
         this.upgradedStack = upgradedStack;
@@ -30,5 +35,7 @@ public class WorkbenchTileCraftEvent extends Event {
         this.workbenchTile = workbenchTile;
         this.materials = materials;
         this.materialsAltered = materialsAltered;
+        this.currentSchematic = currentSchematic;
+        this.currentSlot = currentSlot;
     }
 }

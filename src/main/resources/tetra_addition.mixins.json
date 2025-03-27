@@ -5,7 +5,9 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "tetra_addition.refmap.json",
   "mixins": [
-    "WorkbenchTileMixin"
+    "ConfigSchematicMixin",
+    "WorkbenchTileMixin",
+    "SchematicRegistryMixin"
   ],
   "client": [
   ],
