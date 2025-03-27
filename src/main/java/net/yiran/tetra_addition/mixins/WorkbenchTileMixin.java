@@ -31,7 +31,7 @@ public class WorkbenchTileMixin {
             at = @At(value = "INVOKE", target = "Lse/mickelus/tetra/blocks/workbench/WorkbenchTile;clearSchematic()V"),
             method = "craft",
             remap = false,
-            locals = LocalCapture.CAPTURE_FAILEXCEPTION
+            locals = LocalCapture.CAPTURE_FAILHARD
     )
     public void craft(
             Player player,

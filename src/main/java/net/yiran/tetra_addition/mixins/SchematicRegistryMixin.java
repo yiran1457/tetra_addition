@@ -18,7 +18,6 @@ public class SchematicRegistryMixin implements ISchematicRegistry {
 
     @Shadow public static SchematicRegistry instance;
 
-    @Override
     public Map<ResourceLocation, UpgradeSchematic> getSchematicMap() {
         return schematicMap;
     }
