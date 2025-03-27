@@ -65,7 +65,7 @@ public class TetraAddition
     public TetraAddition(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
-        RegisterEvent
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
