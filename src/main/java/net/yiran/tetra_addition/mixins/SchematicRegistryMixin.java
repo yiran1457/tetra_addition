@@ -4,7 +4,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.yiran.tetra_addition.util.ISchematicRegistry;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
-import org.spongepowered.asm.mixin.Unique;
 import se.mickelus.tetra.module.SchematicRegistry;
 import se.mickelus.tetra.module.schematic.UpgradeSchematic;
 
