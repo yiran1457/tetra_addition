@@ -1,12 +1,11 @@
-package net.yiran.tetra_addition.mixins;
+package net.yiran.tetra_addition.core.mixins;
 
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.ToolAction;
-import net.yiran.tetra_addition.WorkbenchTileCraftEvent;
+import net.yiran.tetra_addition.events.WorkbenchTileCraftEvent;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -28,7 +27,7 @@ public class WorkbenchTileMixin {
     private UpgradeSchematic currentSchematic;
 
     @Inject(
-            at = @At(value = "INVOKE", target = "Lse/mickelus/tetra/blocks/workbench/WorkbenchTile;clearSchematic()V"),
+            at = @At(value = "INVOKE", target = "Lnet/minecraftforge/common/util/LazyOptional;ifPresent(Lnet/minecraftforge/common/util/NonNullConsumer;)V"),
             method = "craft",
             remap = false,
             locals = LocalCapture.CAPTURE_FAILHARD

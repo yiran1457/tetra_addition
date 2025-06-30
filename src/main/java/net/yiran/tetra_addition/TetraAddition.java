@@ -1,40 +1,32 @@
 package net.yiran.tetra_addition;
 
-import com.mojang.logging.LogUtils;
-import net.minecraft.client.Minecraft;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegisterEvent;
 import net.minecraftforge.registries.RegistryObject;
-import org.slf4j.Logger;
+import net.yiran.tetra_addition.item.test.SBTetraModular;
+import net.yiran.tetra_addition.item.test.TestItem;
+import net.yiran.tetra_addition.kubejs.KubeJSHandler;
 
 @Mod(TetraAddition.MODID)
 public class TetraAddition {
     public static final String MODID = "tetra_addition";
     public IEventBus modEventBus;
-    public TetraAddition(FMLJavaModLoadingContext context) {
-        modEventBus = context.getModEventBus();
+
+    public static DeferredRegister<Item> ITEM = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
+    public static RegistryObject<SBTetraModular> SB_ITEM = ITEM.register("sb_test", () -> new SBTetraModular(Tiers.IRON, 10, 2, new Item.Properties().stacksTo(1)));
+    public static RegistryObject<Item> IIITEM = ITEM.register("ii_test", () -> new TestItem(new Item.Properties().stacksTo(1)));
+
+    public TetraAddition() {
+        modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        ITEM.register(modEventBus);
+        if (ModList.get().isLoaded("kubejs")) {
+            KubeJSHandler.addEventListeners();
+        }
     }
 }

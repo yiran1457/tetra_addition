@@ -1,7 +1,7 @@
-package net.yiran.tetra_addition.mixins;
+package net.yiran.tetra_addition.core.mixins;
 
 import net.minecraft.resources.ResourceLocation;
-import net.yiran.tetra_addition.util.ISchematicRegistry;
+import net.yiran.tetra_addition.core.ISchematicRegistry;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import se.mickelus.tetra.module.SchematicRegistry;

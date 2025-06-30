@@ -1,11 +1,10 @@
-package net.yiran.tetra_addition;
+package net.yiran.tetra_addition.util;
 
 import dev.latvian.mods.kubejs.typings.Info;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.yiran.tetra_addition.util.IConfigSchematic;
-import net.yiran.tetra_addition.util.ISchematicRegistry;
+import net.yiran.tetra_addition.core.IConfigSchematic;
+import net.yiran.tetra_addition.core.ISchematicRegistry;
 import org.jetbrains.annotations.NotNull;
 import se.mickelus.tetra.module.SchematicRegistry;
 import se.mickelus.tetra.module.schematic.ConfigSchematic;
@@ -45,12 +44,12 @@ public class MyTetraUtil {
     }
 
     @Info("精准确定outcomeItemStack的材料数量")
-    public ItemStack getModuleMaterial(@NotNull ItemStack itemStack, String slot,ItemStack outcomeItemStack) {
+    public ItemStack getModuleMaterial(@NotNull ItemStack itemStack, String slot, ItemStack outcomeItemStack) {
         ConfigSchematic schematic = getModuleKey2Schematic().get(getModuleKey(itemStack, slot));
         if (schematic == null) return ItemStack.EMPTY;
         for (OutcomeDefinition outcome : ((IConfigSchematic) schematic).getDefinition().outcomes) {
             for (ItemStack stack : outcome.material.getApplicableItemStacks()) {
-                if(stack.getItem()==outcomeItemStack.getItem())
+                if (stack.getItem() == outcomeItemStack.getItem())
                     return stack;
             }
         }
@@ -92,7 +91,7 @@ public class MyTetraUtil {
         return getModuleKey2Schematic().get(getModuleKey(itemStack, slot)) == schematic;
     }
 
-    public boolean isReplace(ConfigSchematic schematic){
+    public boolean isReplace(ConfigSchematic schematic) {
         if (schematicsSet == null)
             getAndUpdateModuleKey2Schematic();
         return schematicsSet.contains(schematic);

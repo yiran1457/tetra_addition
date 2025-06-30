@@ -1,4 +1,4 @@
-package net.yiran.tetra_addition.util;
+package net.yiran.tetra_addition.core;
 
 import se.mickelus.tetra.module.schematic.SchematicDefinition;
 

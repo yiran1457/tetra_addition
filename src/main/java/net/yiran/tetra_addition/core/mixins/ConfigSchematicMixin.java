@@ -1,7 +1,7 @@
-package net.yiran.tetra_addition.mixins;
+package net.yiran.tetra_addition.core.mixins;
 
 import net.minecraft.world.item.ItemStack;
-import net.yiran.tetra_addition.util.IConfigSchematic;
+import net.yiran.tetra_addition.core.IConfigSchematic;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
