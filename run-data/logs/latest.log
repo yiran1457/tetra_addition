@@ -1,0 +1,92 @@
+[206月2025 10:48:24.131] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\dev\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.29, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, tetra_addition, --all, --output, E:\Minecraft\Modding\Tetra_Addition\src\generated\resources, --existing, E:\Minecraft\Modding\Tetra_Addition\src\main\resources, --mixin.config, tetra_addition.mixins.json]
+[206月2025 10:48:24.137] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.11 by JetBrains s.r.o.; OS Windows 11 arch amd64 version 10.0
+[206月2025 10:48:24.220] [main/WARN] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Configuration file E:\Minecraft\Modding\Tetra_Addition\run-data\config\fml.toml is not correct. Correcting
+[206月2025 10:48:24.221] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSkipGLVersions] was corrected from null to []
+[206月2025 10:48:24.221] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowLogHelpMessage] was corrected from null to true
+[206月2025 10:48:24.222] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSquir] was corrected from null to false
+[206月2025 10:48:24.222] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowShowCPU] was corrected from null to false
+[206月2025 10:48:24.235] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[206月2025 10:48:24.270] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/dev/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[206月2025 10:48:24.461] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dev\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.29\c0f2a96b88f344c7fa51185238ddb5f6d1be8560\javafmllanguage-1.20.1-47.3.29.jar is missing mods.toml file
+[206月2025 10:48:24.463] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dev\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.29\7dd674f592d85d4bc5e90ae9d48dbaa81a69462e\lowcodelanguage-1.20.1-47.3.29.jar is missing mods.toml file
+[206月2025 10:48:24.465] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dev\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.29\3e35d3e0c242a3ccdc0f8b2c4f9200a7978c3696\mclanguage-1.20.1-47.3.29.jar is missing mods.toml file
+[206月2025 10:48:24.467] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dev\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.29\14593d5e6d79f573c8f204ed40d52c15b32de896\fmlcore-1.20.1-47.3.29.jar is missing mods.toml file
+[206月2025 10:48:24.721] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 14 dependencies adding them to mods collection
+[206月2025 10:48:26.602] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[206月2025 10:48:26.636] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\dev\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, tetra_addition, --all, --output, E:\Minecraft\Modding\Tetra_Addition\src\generated\resources, --existing, E:\Minecraft\Modding\Tetra_Addition\src\main\resources]
+[206月2025 10:48:26.766] [main/WARN] [mixin/]: Reference map 'tetra_addition.refmap.json' for tetra_addition.mixins.json could not be read. If this is a development environment you can ignore this message
+[206月2025 10:48:27.030] [main/INFO] [mixin/]: Remapping refMap emi-xplat-refmap.json using E:\Minecraft\Modding\Tetra_Addition\build\createSrgToMcp\output.srg
+[206月2025 10:48:27.033] [main/INFO] [mixin/]: Remapping refMap tetra.refmap.json using E:\Minecraft\Modding\Tetra_Addition\build\createSrgToMcp\output.srg
+[206月2025 10:48:27.034] [main/INFO] [mixin/]: Remapping refMap rhino-common-refmap.json using E:\Minecraft\Modding\Tetra_Addition\build\createSrgToMcp\output.srg
+[206月2025 10:48:27.036] [main/INFO] [mixin/]: Remapping refMap slashblade.refmap.json using E:\Minecraft\Modding\Tetra_Addition\build\createSrgToMcp\output.srg
+[206月2025 10:48:27.039] [main/INFO] [mixin/]: Remapping refMap slashblade.refmap.json using E:\Minecraft\Modding\Tetra_Addition\build\createSrgToMcp\output.srg
+[206月2025 10:48:27.106] [main/INFO] [mixin/]: Remapping refMap architectury-forge-refmap.json using E:\Minecraft\Modding\Tetra_Addition\build\createSrgToMcp\output.srg
+[206月2025 10:48:27.107] [main/INFO] [mixin/]: Remapping refMap architectury-common-refmap.json using E:\Minecraft\Modding\Tetra_Addition\build\createSrgToMcp\output.srg
+[206月2025 10:48:27.108] [main/INFO] [mixin/]: Remapping refMap kubejs-forge-refmap.json using E:\Minecraft\Modding\Tetra_Addition\build\createSrgToMcp\output.srg
+[206月2025 10:48:27.108] [main/INFO] [mixin/]: Remapping refMap kubejs-common-refmap.json using E:\Minecraft\Modding\Tetra_Addition\build\createSrgToMcp\output.srg
+[206月2025 10:48:27.202] [main/INFO] [mixin/]: Remapping refMap ModernUI-Forge-ModernUI-Forge-refmap.json using E:\Minecraft\Modding\Tetra_Addition\build\createSrgToMcp\output.srg
+[206月2025 10:48:27.205] [main/INFO] [mixin/]: Remapping refMap ModernUI-Forge-ModernUI-Forge-refmap.json using E:\Minecraft\Modding\Tetra_Addition\build\createSrgToMcp\output.srg
+[206月2025 10:48:27.207] [main/INFO] [mixin/]: Remapping refMap IBEEditor-1.20-common-refmap.json using E:\Minecraft\Modding\Tetra_Addition\build\createSrgToMcp\output.srg
+[206月2025 10:48:27.707] [main/WARN] [mixin/]: Error loading class: mezz/modnametooltip/TooltipEventHandler (java.lang.ClassNotFoundException: mezz.modnametooltip.TooltipEventHandler)
+[206月2025 10:48:27.709] [main/WARN] [mixin/]: Error loading class: me/shedaniel/rei/impl/client/ClientHelperImpl (java.lang.ClassNotFoundException: me.shedaniel.rei.impl.client.ClientHelperImpl)
+[206月2025 10:48:27.938] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.2.0-rc.2).
+[206月2025 10:48:28.081] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [tetra_addition]
+[206月2025 10:48:31.117] [modloading-worker-0/INFO] [com.github.franckyi.ibeeditor.common.CommonInit/]: Initializing IBE Editor - common
+[206月2025 10:48:31.175] [modloading-worker-0/INFO] [com.github.franckyi.ibeeditor.client.ClientInit/]: Initializing IBE Editor - client
+[206月2025 10:48:31.178] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.29, for MC 1.20.1 with MCP 20230612.114412
+[206月2025 10:48:31.178] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.29 Initialized
+[206月2025 10:48:31.267] [modloading-worker-0/INFO] [KubeJS/]: Loaded common.properties
+[206月2025 10:48:31.268] [modloading-worker-0/INFO] [KubeJS/]: Loaded dev.properties
+[206月2025 10:48:31.424] [modloading-worker-0/INFO] [KubeJS Startup/]: Capturing errors for startup scripts enabled
+[206月2025 10:48:31.426] [modloading-worker-0/INFO] [KubeJS/]: Looking for KubeJS plugins...
+[206月2025 10:48:31.455] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source kubejs
+[206月2025 10:48:31.504] [modloading-worker-0/WARN] [KubeJS/]: Plugin dev.latvian.mods.kubejs.integration.forge.gamestages.GameStagesIntegration does not have required mod gamestages loaded, skipping
+[206月2025 10:48:31.504] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source tetra_addition
+[206月2025 10:48:31.508] [modloading-worker-0/INFO] [KubeJS/]: Done in 80.48 ms
+[206月2025 10:48:31.705] [modloading-worker-0/INFO] [ModernUI/Core]: Created TextLayoutEngine
+[206月2025 10:48:31.708] [modloading-worker-0/INFO] [ModernUI/Core]: Initialized Modern UI text engine
+[206月2025 10:48:31.720] [modloading-worker-0/INFO] [ModernUI/Core]: Initialized Modern UI client
+[206月2025 10:48:31.720] [modloading-worker-0/INFO] [ModernUI-MC/Init]: Initialized Modern UI
+[206月2025 10:48:31.766] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id architectury:sync_ids
+[206月2025 10:48:31.767] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id architectury:sync_ids
+[206月2025 10:48:31.840] [modloading-worker-0/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Failed to create mod instance. ModID: tetra, class se.mickelus.tetra.TetraMod
+java.lang.NullPointerException: Cannot invoke "net.minecraft.client.Minecraft.getResourceManager()" because the return value of "net.minecraft.client.Minecraft.getInstance()" is null
+	at se.mickelus.tetra.gui.stats.data.StatIndicatorStore.<init>(StatIndicatorStore.java:30) ~[tetra-1.20.1-6.9.0_mapped_parchment_2023.09.03-1.20.1.jar%23199!/:1.20.1-6.9.0]
+	at se.mickelus.tetra.ClientSetup.init(ClientSetup.java:63) ~[tetra-1.20.1-6.9.0_mapped_parchment_2023.09.03-1.20.1.jar%23199!/:1.20.1-6.9.0]
+	at net.minecraftforge.fml.DistExecutor.safeRunWhenOn(DistExecutor.java:123) ~[fmlcore-1.20.1-47.3.29.jar%23195!/:?]
+	at se.mickelus.tetra.TetraMod.<init>(TetraMod.java:81) ~[tetra-1.20.1-6.9.0_mapped_parchment_2023.09.03-1.20.1.jar%23199!/:1.20.1-6.9.0]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:77) ~[javafmllanguage-1.20.1-47.3.29.jar%23192!/:?]
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$5(ModContainer.java:126) ~[fmlcore-1.20.1-47.3.29.jar%23195!/:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
+[206月2025 10:48:31.848] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[206月2025 10:48:31.851] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 3.405 ms
+[206月2025 10:48:31.855] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Loading Rhino Minecraft remapper...
+[206月2025 10:48:31.858] [modloading-worker-0/INFO] [dev.latvian.mods.rhino.mod.util.RhinoProperties/]: Rhino properties loaded.
+[206月2025 10:48:31.861] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Loading mappings for 1.20.1
+[206月2025 10:48:31.942] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Done in 0.087 s
+[206月2025 10:48:32.236] [modloading-worker-0/INFO] [KubeJS Startup/]: example.js#5: Hello, World! (Loaded startup scripts)
+[206月2025 10:48:32.238] [modloading-worker-0/INFO] [KubeJS Startup/]: Loaded script startup_scripts:example.js in 0.035 s
+[206月2025 10:48:32.240] [modloading-worker-0/INFO] [KubeJS Startup/]: Loaded 1/1 KubeJS startup scripts in 0.296 s with 0 errors and 0 warnings
+[206月2025 10:48:32.275] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id kubejs:send_data_from_client
+[206月2025 10:48:32.276] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:send_data_from_server
+[206月2025 10:48:32.276] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:paint
+[206月2025 10:48:32.277] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:add_stage
+[206月2025 10:48:32.278] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:remove_stage
+[206月2025 10:48:32.278] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:sync_stages
+[206月2025 10:48:32.279] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id kubejs:first_click
+[206月2025 10:48:32.279] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:toast
+[206月2025 10:48:32.280] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:reload_startup_scripts
+[206月2025 10:48:32.280] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:display_server_errors
+[206月2025 10:48:32.281] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:display_client_errors
+[206月2025 10:48:32.288] [main/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event CONSTRUCT, 1 errors found

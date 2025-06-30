@@ -1,0 +1,34 @@
+{
+    "type": "tetra:basic_major_module",
+    "slots": [
+        "sb/handle"
+    ],
+    "variants": [
+        {
+            "materials": [
+                "tetra:fibre/",
+                "tetra:skin/",
+                "tetra:fabric/",
+                "tetra:metal/",
+                "tetra:wood/",
+                "tetra:gem/"
+            ],
+            "key": "handle/",
+            "extract": {
+                "durability": 0.1,
+                "glyph": {
+                    "textureX": 72,
+                    "textureY": 112
+                },
+                "availableTextures": [
+                    "default"
+                ],
+                "models": [
+                    {
+                        "location": "tetra:item/module/helmet/"
+                    }
+                ]
+            }
+        }
+    ]
+}
