@@ -6,7 +6,10 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.ToolAction;
+import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.items.ItemStackHandler;
 import net.yiran.tetra_addition.WorkbenchTileCraftEvent;
+import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -27,6 +30,8 @@ public class WorkbenchTileMixin {
     @Shadow
     private UpgradeSchematic currentSchematic;
 
+    @Shadow @Final private LazyOptional<ItemStackHandler> handler;
+
     @Inject(
             at = @At(value = "INVOKE", target = "Lse/mickelus/tetra/blocks/workbench/WorkbenchTile;clearSchematic()V"),
             method = "craft",
@@ -44,7 +49,7 @@ public class WorkbenchTileMixin {
             ItemStack[] materials,
             ItemStack[] materialsAltered
     ) {
-        MinecraftForge.EVENT_BUS.post(new WorkbenchTileCraftEvent(
+        var event = new WorkbenchTileCraftEvent(
                 targetStack,
                 upgradedStack,
                 player,
@@ -53,6 +58,11 @@ public class WorkbenchTileMixin {
                 materialsAltered,
                 currentSchematic,
                 currentSlot
-        ));
+        );
+        MinecraftForge.EVENT_BUS.post(event);
+
+        this.handler.ifPresent((handler) -> {
+            handler.setStackInSlot(0, event.getUpgradedStack());
+        });
     }
 }

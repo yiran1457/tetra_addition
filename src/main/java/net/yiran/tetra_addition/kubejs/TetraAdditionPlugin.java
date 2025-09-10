@@ -10,7 +10,6 @@ public class TetraAdditionPlugin extends KubeJSPlugin {
     @Override
     public void registerBindings(BindingsEvent event) {
         event.add("MyTetraUtil", MyTetraUtil.instance);
-        event.add("ItemEffect", ItemEffect.class);
         event.add("$WorkbenchTileCraftEvent", WorkbenchTileCraftEvent.class);
     }
 }

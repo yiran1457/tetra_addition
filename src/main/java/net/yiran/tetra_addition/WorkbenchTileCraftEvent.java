@@ -38,4 +38,44 @@ public class WorkbenchTileCraftEvent extends Event {
         this.currentSchematic = currentSchematic;
         this.currentSlot = currentSlot;
     }
+
+    public void setUpgradedStack(ItemStack upgradedStack) {
+        this.upgradedStack = upgradedStack;
+    }
+
+    public ItemStack getTargetStack() {
+        return targetStack;
+    }
+
+    public ItemStack getUpgradedStack() {
+        return upgradedStack;
+    }
+
+    public Player getPlayer() {
+        return player;
+    }
+
+    public Level getLevel() {
+        return level;
+    }
+
+    public WorkbenchTile getWorkbenchTile() {
+        return workbenchTile;
+    }
+
+    public ItemStack[] getMaterials() {
+        return materials;
+    }
+
+    public ItemStack[] getMaterialsAltered() {
+        return materialsAltered;
+    }
+
+    public UpgradeSchematic getCurrentSchematic() {
+        return currentSchematic;
+    }
+
+    public String getCurrentSlot() {
+        return currentSlot;
+    }
 }
