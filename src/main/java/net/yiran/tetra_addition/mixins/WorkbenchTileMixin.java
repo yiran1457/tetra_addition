@@ -22,7 +22,7 @@ import se.mickelus.tetra.module.schematic.UpgradeSchematic;
 
 import java.util.Map;
 
-@Mixin(WorkbenchTile.class)
+@Mixin(value = WorkbenchTile.class,remap = false)
 public class WorkbenchTileMixin {
     @Shadow
     private String currentSlot;

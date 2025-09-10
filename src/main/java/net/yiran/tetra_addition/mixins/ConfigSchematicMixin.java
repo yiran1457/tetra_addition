@@ -11,7 +11,7 @@ import se.mickelus.tetra.module.schematic.SchematicDefinition;
 
 import java.util.Optional;
 
-@Mixin(ConfigSchematic.class)
+@Mixin(value = ConfigSchematic.class,remap = false)
 public abstract class ConfigSchematicMixin implements IConfigSchematic {
     @Shadow @Final private SchematicDefinition definition;
 
